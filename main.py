@@ -48,7 +48,6 @@ def main():
                 embedding=embeddings,
                 persist_directory=persist_directory
             )
-            vectorstore.persist()
             
             print(f"Success: Stored {len(chunks)} technical chunks in local database.")
         except Exception as e:
